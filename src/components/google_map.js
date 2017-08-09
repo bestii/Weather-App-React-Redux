@@ -4,7 +4,7 @@ class GoogleMap extends Component {
     // Life cycle method called called after thsi component has been rendered to the screen
     // mainly for 3rd party library that dont understand react ecosystem
     componentDidMount() {
-        new GoogleMap.maps.Map(this.refs.map, {
+        new google.maps.Map(this.refs.map, {
             zoom: 12,
             center: {
                lat: this.props.lat,
